@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Make Facebook Browsable",
+  "description": "Makes Facebook slightly more usable when you're not logged in.",
+  "version": "1.0",
+
+  "icons": {
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "https://*.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.facebook.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+	  "facebook.css"
+  ]
+}

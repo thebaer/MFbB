@@ -1,0 +1,8 @@
+/**
+ * facebook.css
+ * Contains default styles to inject into Facebook
+ */
+#pagelet_bluebar,
+#pagelet_growth_expanding_cta {
+	display: none;
+}
